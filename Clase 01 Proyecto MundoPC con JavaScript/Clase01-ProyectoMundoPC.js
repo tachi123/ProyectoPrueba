@@ -160,3 +160,19 @@ let orden1 = new Orden();
 orden1.agregarComputadora(computadora1);
 orden1.agregarComputadora(computadora2);
 console.log(orden1.mostrarOrden());
+
+/** Método para demostrar polimorfismo
+ * 
+ * La clase Orden no participa en el polimorfismo porque tiene como objetivo 
+ * gestionar una colección de objetos Computadora. Pero cabe aclarar 
+ * igual se usa indirectamente al invocar el metodo toString de los objetos 
+ * Computadora dentro de la función MostrarOrden
+ */
+function imprimirDetalles(dispositivo){
+    console.log(dispositivo.toString());
+}
+
+mostrarDetalles(raton1);
+mostrarDetalles(teclado1); 
+mostrarDetalles(monitor1); 
+mostrarDetalles(computadora1);
